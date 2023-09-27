@@ -1,0 +1,71 @@
+﻿@page
+@model pruebaEntity.Pages.Inssuingquotations.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Inssuingquotation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.Id" class="control-label"></label>
+                <input asp-for="Inssuingquotation.Id" class="form-control" />
+                <span asp-validation-for="Inssuingquotation.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.IsDeleted" class="control-label"></label>
+                <input asp-for="Inssuingquotation.IsDeleted" class="form-control" />
+                <span asp-validation-for="Inssuingquotation.IsDeleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.CreatedAt" class="control-label"></label>
+                <input asp-for="Inssuingquotation.CreatedAt" class="form-control" />
+                <span asp-validation-for="Inssuingquotation.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.UpdatedAt" class="control-label"></label>
+                <input asp-for="Inssuingquotation.UpdatedAt" class="form-control" />
+                <span asp-validation-for="Inssuingquotation.UpdatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.UserAppId" class="control-label"></label>
+                <select asp-for="Inssuingquotation.UserAppId" class ="form-control" asp-items="ViewBag.UserAppId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.InputId" class="control-label"></label>
+                <select asp-for="Inssuingquotation.InputId" class ="form-control" asp-items="ViewBag.InputId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.BookId" class="control-label"></label>
+                <select asp-for="Inssuingquotation.BookId" class ="form-control" asp-items="ViewBag.BookId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.SesionId" class="control-label"></label>
+                <input asp-for="Inssuingquotation.SesionId" class="form-control" />
+                <span asp-validation-for="Inssuingquotation.SesionId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inssuingquotation.Guid" class="control-label"></label>
+                <input asp-for="Inssuingquotation.Guid" class="form-control" />
+                <span asp-validation-for="Inssuingquotation.Guid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

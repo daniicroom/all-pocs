@@ -1,0 +1,108 @@
+﻿@page
+@model prueba.Pages.Inputs.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="./Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].IsDeleted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].UpdatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].SidewalkId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].ProductiveSystemId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].CropYield)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].CropProductionCosts)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].InitialSowingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].FinalSowingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].AreaCrop)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].FinagroCcredit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].PlantsByHectare)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Input[0].ClientSize)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Input) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsDeleted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SidewalkId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductiveSystemId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CropYield)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CropProductionCosts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InitialSowingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalSowingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AreaCrop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinagroCcredit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlantsByHectare)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClientSize)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

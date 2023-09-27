@@ -1,0 +1,30 @@
+﻿@using PocAauth.Data
+@model OTPSignIn
+
+
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="row">
+    @{
+        <div class="col-md-4">
+                <section>
+                    <form method="get" asp-controller="Prueba" asp-action="Admin">
+
+                        <input type="submit" value="admin">
+                    </form>
+                    <form method="get" asp-controller="Prueba" asp-action="Standart">
+
+                        <input type="submit" value="standart">
+                    </form>
+                </section>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

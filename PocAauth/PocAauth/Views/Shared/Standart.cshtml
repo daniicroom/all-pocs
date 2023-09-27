@@ -1,0 +1,27 @@
+﻿@using PocAauth.Data
+@model OTPSignIn
+
+
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="row">
+    @{
+        <div class="col-md-4">
+            <section>
+                
+                    <label for="code">OTP:</label>
+                    <input type="text" id="code" name="code" required>
+                    <br />
+                    <label for="userAppId">Prueba standart o general</label>
+            </section>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

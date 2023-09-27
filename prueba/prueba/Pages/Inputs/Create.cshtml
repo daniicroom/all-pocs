@@ -1,0 +1,99 @@
+﻿@page
+@model prueba.Pages.Inputs.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Input</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input.Id" class="control-label"></label>
+                <input asp-for="Input.Id" class="form-control" />
+                <span asp-validation-for="Input.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.IsDeleted" class="control-label"></label>
+                <input asp-for="Input.IsDeleted" class="form-control" />
+                <span asp-validation-for="Input.IsDeleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.CreatedAt" class="control-label"></label>
+                <input asp-for="Input.CreatedAt" class="form-control" />
+                <span asp-validation-for="Input.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.UpdatedAt" class="control-label"></label>
+                <input asp-for="Input.UpdatedAt" class="form-control" />
+                <span asp-validation-for="Input.UpdatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.SidewalkId" class="control-label"></label>
+                <input asp-for="Input.SidewalkId" class="form-control" />
+                <span asp-validation-for="Input.SidewalkId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ProductiveSystemId" class="control-label"></label>
+                <input asp-for="Input.ProductiveSystemId" class="form-control" />
+                <span asp-validation-for="Input.ProductiveSystemId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.CropYield" class="control-label"></label>
+                <input asp-for="Input.CropYield" class="form-control" />
+                <span asp-validation-for="Input.CropYield" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.CropProductionCosts" class="control-label"></label>
+                <input asp-for="Input.CropProductionCosts" class="form-control" />
+                <span asp-validation-for="Input.CropProductionCosts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.InitialSowingDate" class="control-label"></label>
+                <input asp-for="Input.InitialSowingDate" class="form-control" />
+                <span asp-validation-for="Input.InitialSowingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.FinalSowingDate" class="control-label"></label>
+                <input asp-for="Input.FinalSowingDate" class="form-control" />
+                <span asp-validation-for="Input.FinalSowingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.AreaCrop" class="control-label"></label>
+                <input asp-for="Input.AreaCrop" class="form-control" />
+                <span asp-validation-for="Input.AreaCrop" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.FinagroCcredit" class="control-label"></label>
+                <input asp-for="Input.FinagroCcredit" class="form-control" />
+                <span asp-validation-for="Input.FinagroCcredit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.PlantsByHectare" class="control-label"></label>
+                <input asp-for="Input.PlantsByHectare" class="form-control" />
+                <span asp-validation-for="Input.PlantsByHectare" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ClientSize" class="control-label"></label>
+                <input asp-for="Input.ClientSize" class="form-control" />
+                <span asp-validation-for="Input.ClientSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\bin\Debug\netcoreapp3.1\PocPdfPage.exe
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\bin\Debug\netcoreapp3.1\PocPdfPage.deps.json
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\bin\Debug\netcoreapp3.1\PocPdfPage.runtimeconfig.json
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\bin\Debug\netcoreapp3.1\PocPdfPage.runtimeconfig.dev.json
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\bin\Debug\netcoreapp3.1\PocPdfPage.dll
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\bin\Debug\netcoreapp3.1\PocPdfPage.pdb
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\obj\Debug\netcoreapp3.1\PocPdfPage.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\obj\Debug\netcoreapp3.1\PocPdfPage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\obj\Debug\netcoreapp3.1\PocPdfPage.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\obj\Debug\netcoreapp3.1\PocPdfPage.AssemblyInfo.cs
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\obj\Debug\netcoreapp3.1\PocPdfPage.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\obj\Debug\netcoreapp3.1\PocPdfPage.dll
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\obj\Debug\netcoreapp3.1\PocPdfPage.pdb
+C:\Users\User\source\repos\PocPdfPage\PocPdfPage\obj\Debug\netcoreapp3.1\PocPdfPage.genruntimeconfig.cache
